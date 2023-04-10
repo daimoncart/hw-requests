@@ -1,0 +1,2 @@
+export const CATEGORIES: string[] = ['coolers', 'processors (AMD)', 'processors (Intel)', 'motherboards (AMD)',
+'motherboards (Intel)', 'RAM', 'SODIMM', 'GPUs', 'SSD', 'HDD', 'cases', 'fans', 'PSUs', 'sound cards', 'other'];

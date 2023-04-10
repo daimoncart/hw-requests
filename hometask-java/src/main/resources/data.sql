@@ -1,0 +1,1 @@
+INSERT INTO `request` (reasoning, status, total, createdDate) VALUES ('User wants to play games', 'Accepted', 32, '2023-04-10T22:31:48.14278+03:00');
