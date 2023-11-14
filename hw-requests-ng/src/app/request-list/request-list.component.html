@@ -1,0 +1,26 @@
+<div class="card my-5">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Reasoning</th>
+          <th scope="col">Status</th>
+          <th scope="col">Total</th>
+          <th scope="col">Date</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let request of requests">
+          <td>{{ request.id }}</td>
+          <td>{{ request.reasoning.length >30 ? request.reasoning.substring(0, 29) + '..' : request.reasoning }}</td>
+          <td>{{ request.status }}</td>
+          <td>{{ request.total.toFixed(2) }}</td>
+          <td>{{ request.createdDate.toString().substring(0, 10) }}</td>
+          <td><a routerLink="/requests/{{request.id}}" class="btn btn-dark">View</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
